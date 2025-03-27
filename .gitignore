@@ -4,3 +4,6 @@ venv/
 
 # Secrets
 .env
+
+# Data
+data/bot/*.json
