@@ -1,0 +1,6 @@
+# Env
+venv/
+.idea/
+
+# Secrets
+.env

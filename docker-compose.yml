@@ -1,0 +1,18 @@
+services:
+  bot:
+    container_name: same_sticker_bot
+    build:
+      context: telegram
+      dockerfile: Dockerfile
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN}
+
+    develop:
+      watch:
+        - action: rebuild
+          path: telegram/bot/requirements.txt
+        - action: rebuild
+          path: telegram/bot/settings.py
+        - action: sync+restart
+          path: telegram/bot
+          target: /app/code
