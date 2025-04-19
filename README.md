@@ -24,6 +24,13 @@ Clone repository:
 git clone https://github.com/loginchik/Same-Sticker-Bot.git
 ```
 
+Move to project directory:
+
+```bash 
+cd Same-Sticker-Bot
+```
+
+
 Run docker compose container:
 
 ```bash
